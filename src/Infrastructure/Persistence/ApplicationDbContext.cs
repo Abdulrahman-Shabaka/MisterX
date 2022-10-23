@@ -8,6 +8,7 @@ using MediatR;
 using Microsoft.AspNetCore.ApiAuthorization.IdentityServer;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Options;
+using Domain.Entities;
 
 namespace MisterX.Infrastructure.Persistence;
 
@@ -30,6 +31,10 @@ public class ApplicationDbContext : ApiAuthorizationDbContext<ApplicationUser>, 
     public DbSet<TodoList> TodoLists => Set<TodoList>();
 
     public DbSet<TodoItem> TodoItems => Set<TodoItem>();
+
+    public DbSet<Student> Students => Set<Student>();
+
+    public DbSet<Room> Rooms => Set<Room>();
 
     protected override void OnModelCreating(ModelBuilder builder)
     {
