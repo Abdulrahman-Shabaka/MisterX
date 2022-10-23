@@ -131,5 +131,8 @@
       }
     }
   },
-  "defaultProject": "MisterX.WebUI"
+  "defaultProject": "MisterX.WebUI",
+  "cli": {
+    "analytics": "68c31cee-3370-48e0-b672-d1633b05d5d3"
+  }
 }
