@@ -10,8 +10,11 @@ public interface IApplicationDbContext
 
     DbSet<TodoItem> TodoItems { get; }
 
-    DbSet<Student> Students {get;}
+    DbSet<Student> Students { get; }
+
     DbSet<Room> Rooms { get; }
+
+    DbSet<Teacher> Teachers { get; }
 
     Task<int> SaveChangesAsync(CancellationToken cancellationToken);
 }

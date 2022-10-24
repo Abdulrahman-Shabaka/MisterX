@@ -35,6 +35,7 @@ public class ApplicationDbContext : ApiAuthorizationDbContext<ApplicationUser>, 
     public DbSet<Student> Students => Set<Student>();
 
     public DbSet<Room> Rooms => Set<Room>();
+    public DbSet<Teacher> Teachers => Set<Teacher>();
 
     protected override void OnModelCreating(ModelBuilder builder)
     {

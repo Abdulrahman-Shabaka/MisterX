@@ -21,8 +21,7 @@ public class TodoItem : BaseAuditableEntity
             if (value == true && _done == false)
             {
                 AddDomainEvent(new TodoItemCompletedEvent(this));
-            }
-
+            } 
             _done = value;
         }
     }
